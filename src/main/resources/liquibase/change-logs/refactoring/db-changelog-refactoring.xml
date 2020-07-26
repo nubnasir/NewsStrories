@@ -1,0 +1,30 @@
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd">
+
+
+    <changeSet author="nasir" id="refactor-1.0.0.0">
+
+        <dropColumn tableName="news_story"
+            columnName="publish_date">
+        </dropColumn>
+        <dropColumn tableName="user"
+                    columnName="registration_date">
+        </dropColumn>
+        <dropColumn tableName="user"
+                    columnName="last_log_in_date">
+        </dropColumn>
+
+        <addColumn tableName="news_story">
+            <column name="publish_date" type="datetime"/>
+        </addColumn>
+        <addColumn tableName="user">
+            <column name="registration_date" type="datetime"/>
+        </addColumn>
+        <addColumn tableName="user">
+            <column name="last_log_in_date" type="datetime" />
+        </addColumn>
+
+    </changeSet>
+</databaseChangeLog>

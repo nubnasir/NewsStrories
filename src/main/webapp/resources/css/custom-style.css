@@ -1,0 +1,42 @@
+.error {
+    color: #f00;
+}
+
+.story {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    background-color: #f8fbf4;
+}
+
+.margin-right-6px {
+    margin-right: 6px;
+}
+
+.stories-pagination {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    background-color: #dcfbdb;
+}
+.stories-pagination-active {
+    background-color: #d0eed6;
+}
+.story-loader{
+    display: none;
+    color: #2b542c;
+}
+.advance-filter{
+    padding: 10px;
+    margin: 10px;
+    background-color: #f5ffdd;
+}
+.success-msg{
+    color: #00dd1c;
+    margin-left: 10px;
+}
+
+.custom-header {
+    background-color: #edf2f5;
+    padding: 20px;
+}

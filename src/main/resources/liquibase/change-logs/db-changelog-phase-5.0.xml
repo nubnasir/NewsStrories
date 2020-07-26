@@ -1,0 +1,25 @@
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd">
+
+    <changeSet author="nasir" id="phase-5.0.0.1">
+        <createTable tableName="user">
+            <column name="id" type="bigint" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="user_name" type="varchar(100)"/>
+            <column name="password" type="text"/>
+            <column name="full_name" type="varchar(100)"/>
+            <column name="registration_date" type="bigint"/>
+            <column name="last_log_in_date" type="bigint"/>
+        </createTable>
+    </changeSet>
+
+    <changeSet author="nasir" id="phase-5.0.0.2">
+        <addColumn tableName="news_story">
+            <column name="user_id" type="bigint" defaultValue="0"/>
+        </addColumn>
+    </changeSet>
+
+</databaseChangeLog>
