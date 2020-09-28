@@ -1,6 +1,6 @@
 **Storing and Managing News and Stories**
 
-**Here a custom made (by me) pagination is used**
+**Here a custom made (by me) pagination using javaScript and Jquey is used**
 
 **_Technologies used:_**
 > 1)  Java 8
