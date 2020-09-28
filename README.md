@@ -1,7 +1,6 @@
 **Storing and Managing News and Stories**
 
-**_Video Demo_**
-> https://drive.google.com/file/d/1k_7k6oN1OHj_aOI2sQnOd_uFf6BeiZ_A/view?usp=sharing
+**Here a custom made (by me) pagination is used
 
 **_Technologies used:_**
 > 1)  Java 8
