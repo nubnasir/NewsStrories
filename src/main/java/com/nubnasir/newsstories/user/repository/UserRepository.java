@@ -6,9 +6,6 @@ import org.hibernate.Criteria;
 import org.hibernate.criterion.Restrictions;
 import org.springframework.stereotype.Repository;
 
-/**
- * Created by root on 9/12/18.
- */
 @Repository
 public class UserRepository extends BaseRepository<UserEntity> {
 

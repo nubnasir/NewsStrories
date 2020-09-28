@@ -2,9 +2,6 @@ package com.nubnasir.newsstories.authentication.encryption;
 
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
-/**
- * Created by root on 9/13/18.
- */
 public class ApplicationUserAuthentication {
 
     public static String encrypt(String str){

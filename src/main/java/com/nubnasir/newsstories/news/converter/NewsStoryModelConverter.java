@@ -10,12 +10,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 
-/**
- * Created by root on 9/10/18.
- */
 @Component
 public class NewsStoryModelConverter implements ModelConverterInterface<NewsStory, NewsStoryDto>{
 

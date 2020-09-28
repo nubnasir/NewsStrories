@@ -9,14 +9,17 @@ import org.springframework.beans.factory.annotation.Qualifier;
 
 import java.lang.reflect.ParameterizedType;
 
-/**
- * Created by root on 9/9/18.
- */
 public abstract class BaseRepository<T extends Object> {
 
-    @Autowired
-    @Qualifier(value = "sessionFactory")
     private SessionFactory sessionFactory;
+
+    public BaseRepository() {
+    }
+
+    @Autowired
+    public BaseRepository(@Qualifier("sessionFactory") SessionFactory sessionFactory) {
+        this.sessionFactory = sessionFactory;
+    }
 
     private Class<T> modelClass;
 

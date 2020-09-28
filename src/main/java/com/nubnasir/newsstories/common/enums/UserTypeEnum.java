@@ -1,8 +1,5 @@
 package com.nubnasir.newsstories.common.enums;
 
-/**
- * Created by root on 9/13/18.
- */
 public enum UserTypeEnum {
     AUTHENTICATED(1),
     ANONYMOUS(-1);

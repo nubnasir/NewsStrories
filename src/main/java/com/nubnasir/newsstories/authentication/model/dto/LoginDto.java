@@ -1,10 +1,5 @@
 package com.nubnasir.newsstories.authentication.model.dto;
 
-import org.hibernate.validator.constraints.NotEmpty;
-
-/**
- * Created by root on 9/12/18.
- */
 public class LoginDto {
 
     private String j_username;

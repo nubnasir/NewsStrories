@@ -5,9 +5,6 @@ import com.nubnasir.newsstories.common.enums.UserTypeEnum;
 
 import javax.servlet.http.HttpSession;
 
-/**
- * Created by root on 9/10/18.
- */
 public class BaseController {
 
     protected String OPERATION_TYPE = "operationType";

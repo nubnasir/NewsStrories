@@ -4,7 +4,6 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 /**
- * Created by root on 9/10/18.
  * <b>Note</b> Helps to convert date time to desired format and type.
  */
 public class DateTimeHelper {

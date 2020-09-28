@@ -6,9 +6,6 @@ import javax.persistence.*;
 import java.util.Date;
 import java.util.List;
 
-/**
- * Created by root on 9/12/18.
- */
 @Entity
 @Table(name = "user")
 public class UserEntity {

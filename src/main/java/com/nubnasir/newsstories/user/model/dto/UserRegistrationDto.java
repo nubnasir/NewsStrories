@@ -4,10 +4,6 @@ import org.hibernate.validator.constraints.NotEmpty;
 
 import javax.validation.constraints.Size;
 
-/**
- * Created by root on 9/12/18.
- */
-
 public class UserRegistrationDto {
 
     @NotEmpty(message = "User name is required")

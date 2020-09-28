@@ -17,9 +17,6 @@ import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
-/**
- * Created by root on 9/10/18.
- */
 @Transactional
 @Service
 public class NewStoryService extends BaseService {

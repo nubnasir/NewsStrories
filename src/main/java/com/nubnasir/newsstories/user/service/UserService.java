@@ -5,21 +5,21 @@ import com.nubnasir.newsstories.user.model.dto.UserRegistrationDto;
 import com.nubnasir.newsstories.user.model.entity.UserEntity;
 import com.nubnasir.newsstories.user.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.Date;
 
-/**
- * Created by root on 9/12/18.
- */
 @Transactional
 @Service
 public class UserService {
 
-    @Autowired
     private UserRepository userRepository;
+
+    @Autowired
+    public UserService(UserRepository userRepository) {
+        this.userRepository = userRepository;
+    }
 
     public void registerUser(UserRegistrationDto registrationDto){
         UserEntity userEntity = new UserEntity();

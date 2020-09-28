@@ -1,8 +1,5 @@
 package com.nubnasir.newsstories.authentication.model.session;
 
-/**
- * Created by root on 9/12/18.
- */
 public class UserInfo {
 
     private long id;

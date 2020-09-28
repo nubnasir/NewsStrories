@@ -1,7 +1,6 @@
 package com.nubnasir.newsstories.common.enums;
 
 /**
- * Created by root on 9/10/18.
  * <b>Note</b> for number of news stories in a page
  */
 public enum PageSizeEnum {

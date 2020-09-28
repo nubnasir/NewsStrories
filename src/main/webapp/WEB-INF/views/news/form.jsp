@@ -1,10 +1,3 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: root
-  Date: 9/10/18
-  Time: 3:08 AM
-  To change this template use File | Settings | File Templates.
---%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 

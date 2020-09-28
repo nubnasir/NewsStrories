@@ -2,9 +2,6 @@ package com.nubnasir.newsstories.news.model.dtos;
 
 import java.util.List;
 
-/**
- * Created by root on 9/10/18.
- */
 public class NewsStoryPageData {
 
     private List<NewsStoryDto> newsStoryDtos;

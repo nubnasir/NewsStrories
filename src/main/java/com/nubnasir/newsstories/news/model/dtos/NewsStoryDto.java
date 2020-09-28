@@ -3,14 +3,8 @@ package com.nubnasir.newsstories.news.model.dtos;
 import com.nubnasir.newsstories.user.model.dto.UserDto;
 import org.hibernate.validator.constraints.NotEmpty;
 
-import javax.validation.constraints.Max;
-import javax.validation.constraints.Min;
 import javax.validation.constraints.Size;
-import java.util.Date;
 
-/**
- * Created by root on 9/10/18.
- */
 public class NewsStoryDto {
 
     private long id;

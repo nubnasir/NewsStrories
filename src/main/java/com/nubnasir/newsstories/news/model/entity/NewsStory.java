@@ -7,9 +7,6 @@ import org.hibernate.annotations.NotFoundAction;
 import javax.persistence.*;
 import java.util.Date;
 
-/**
- * Created by root on 9/9/18.
- */
 @Entity
 @Table(name = "news_story")
 public class NewsStory {

@@ -5,9 +5,6 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 
-/**
- * Created by root on 9/11/18.
- */
 @XmlRootElement
 @XmlAccessorType(XmlAccessType.FIELD)
 public class ApiNewsStory {

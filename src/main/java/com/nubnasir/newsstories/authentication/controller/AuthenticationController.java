@@ -12,10 +12,6 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-/**
- * Created by root on 9/12/18.
- */
-
 @Controller
 public class AuthenticationController {
 

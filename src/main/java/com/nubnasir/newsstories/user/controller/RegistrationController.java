@@ -14,9 +14,6 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 import javax.validation.Valid;
 import javax.xml.ws.soap.Addressing;
 
-/**
- * Created by root on 9/12/18.
- */
 @Controller
 public class RegistrationController extends BaseController {
 

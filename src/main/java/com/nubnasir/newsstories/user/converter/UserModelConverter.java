@@ -9,9 +9,6 @@ import org.springframework.stereotype.Component;
 import java.util.Date;
 import java.util.List;
 
-/**
- * Created by root on 9/12/18.
- */
 @Component
 public class UserModelConverter implements ModelConverterInterface<UserEntity, UserDto> {
 

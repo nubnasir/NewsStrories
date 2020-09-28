@@ -11,9 +11,6 @@ import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
-/**
- * Created by root on 9/10/18.
- */
 @Repository
 public class NewsStoryRepository extends BaseRepository<NewsStory> {
 

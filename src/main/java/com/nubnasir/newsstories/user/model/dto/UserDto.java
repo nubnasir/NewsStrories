@@ -1,8 +1,5 @@
 package com.nubnasir.newsstories.user.model.dto;
 
-/**
- * Created by root on 9/12/18.
- */
 public class UserDto {
 
     private long id;

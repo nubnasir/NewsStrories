@@ -21,9 +21,6 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 import javax.servlet.http.HttpSession;
 import javax.validation.Valid;
 
-/**
- * Created by root on 9/10/18.
- */
 @Controller
 @RequestMapping("/news/stories")
 public class NewsStoryController extends BaseController{

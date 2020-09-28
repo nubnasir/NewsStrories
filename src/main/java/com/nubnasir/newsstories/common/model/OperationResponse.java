@@ -1,8 +1,5 @@
 package com.nubnasir.newsstories.common.model;
 
-/**
- * Created by root on 9/13/18.
- */
 public class OperationResponse {
 
     private int responseCode;

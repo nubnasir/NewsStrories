@@ -1,7 +1,6 @@
 package com.nubnasir.newsstories.common.enums;
 
 /**
- * Created by root on 9/11/18.
  * <b>Note</b> News stories operation type.
  * Helps to get view title for different operation
  */
