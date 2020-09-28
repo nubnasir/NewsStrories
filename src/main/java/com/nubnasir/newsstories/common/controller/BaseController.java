@@ -11,7 +11,7 @@ public class BaseController {
     protected String SESSION_USER_INFO_KEY= "userInfo";
 
     public long getAuthenticatedUserId(HttpSession session){
-        UserInfo userInfo = (UserInfo) getAuthenticatedUserInfo(session);
+        UserInfo userInfo = getAuthenticatedUserInfo(session);
         return userInfo != null? userInfo.getId() : UserTypeEnum.ANONYMOUS.getCode();
     }
 

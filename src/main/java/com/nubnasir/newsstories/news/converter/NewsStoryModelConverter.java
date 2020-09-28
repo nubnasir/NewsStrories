@@ -52,15 +52,6 @@ public class NewsStoryModelConverter implements ModelConverterInterface<NewsStor
         return newsStoryDtos;
     }
 
-    @Override
-    public List<NewsStory> convertDtosToEntities(List<NewsStoryDto> newsStoryDtos) {
-        List<NewsStory> newsStories = new ArrayList<>();
-        for(NewsStoryDto newsStoryDto : newsStoryDtos){
-            newsStories.add(convertDtoToEntity(newsStoryDto));
-        }
-        return newsStories;
-    }
-
     public ApiNewsStory convertToDtoToApi(NewsStoryDto newsStoryDto){
         ApiNewsStory apiNewsStory = new ApiNewsStory();
         apiNewsStory.setId(newsStoryDto.getId());

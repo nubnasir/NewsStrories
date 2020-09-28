@@ -9,9 +9,6 @@ import org.springframework.security.authentication.UsernamePasswordAuthenticatio
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.AuthenticationException;
 
-/**
- * Created by root on 9/12/18.
- */
 public class CustomAuthenticationProvider implements AuthenticationProvider {
 
     @Autowired

@@ -1,7 +1,7 @@
 package com.nubnasir.newsstories.common.service;
 
 /**
- * Created by root on 9/10/18.
+ * Created to be used in future modifications
  */
 public class BaseService {
 }
