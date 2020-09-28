@@ -1,7 +1,6 @@
 package com.nubnasir.newsstories.authentication.model.session;
 
 import lombok.Getter;
-import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Getter

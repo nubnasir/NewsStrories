@@ -11,7 +11,6 @@ import javax.xml.bind.annotation.XmlRootElement;
 
 @Getter
 @Setter
-@NoArgsConstructor
 @XmlAccessorType(XmlAccessType.FIELD)
 public class ApiNewsStory {
 

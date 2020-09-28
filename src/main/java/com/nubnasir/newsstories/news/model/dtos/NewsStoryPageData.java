@@ -1,7 +1,6 @@
 package com.nubnasir.newsstories.news.model.dtos;
 
 import lombok.Getter;
-import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import java.util.List;
