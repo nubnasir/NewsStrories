@@ -18,6 +18,7 @@ public class ErrorController {
 
 	@ExceptionHandler(Exception.class)
 	public String handleException(Exception exception) {
+		exception.printStackTrace();
 		return "system-error";
 	}
 

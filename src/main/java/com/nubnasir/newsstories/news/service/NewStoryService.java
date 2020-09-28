@@ -11,12 +11,14 @@ import com.nubnasir.newsstories.news.model.dtos.NewsStoryPageData;
 import com.nubnasir.newsstories.news.model.entity.NewsStory;
 import com.nubnasir.newsstories.news.model.thirdparty.ApiNewsStory;
 import com.nubnasir.newsstories.news.repository.NewsStoryRepository;
+import com.nubnasir.newsstories.user.model.dto.UserDto;
 import com.nubnasir.newsstories.user.model.entity.UserEntity;
 import com.nubnasir.newsstories.user.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Transactional
