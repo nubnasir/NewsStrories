@@ -18,8 +18,12 @@ import org.springframework.web.bind.annotation.RequestParam;
 @RequestMapping("/public/news/stories")
 public class PublicNewsStoriesController {
 
-    @Autowired
     private NewStoryService newsStoriesService;
+
+    @Autowired
+    public PublicNewsStoriesController(NewStoryService newsStoriesService) {
+        this.newsStoriesService = newsStoriesService;
+    }
 
     @RequestMapping(value = {"", "/"}, method = RequestMethod.GET)
     public String getStoryListing(Model model){

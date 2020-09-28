@@ -25,8 +25,12 @@ import javax.validation.Valid;
 @RequestMapping("/news/stories")
 public class NewsStoryController extends BaseController{
 
-    @Autowired
     private NewStoryService newsStoriesService;
+
+    @Autowired
+    public NewsStoryController(NewStoryService newsStoriesService) {
+        this.newsStoriesService = newsStoriesService;
+    }
 
     @RequestMapping(value = {"", "/"}, method = RequestMethod.GET)
     public String getStoryListing(Model model, HttpSession session){

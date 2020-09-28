@@ -36,11 +36,6 @@ public class UserModelConverter implements ModelConverterInterface<UserEntity, U
     }
 
     @Override
-    public List<UserEntity> convertDtosToEntities(List<UserDto> userDtos) {
-        return null;
-    }
-
-    @Override
     public List<UserDto> convertEntitiesToDtos(List<UserEntity> userEntities) {
         return null;
     }

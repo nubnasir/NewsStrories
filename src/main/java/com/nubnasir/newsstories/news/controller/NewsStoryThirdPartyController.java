@@ -11,11 +11,15 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/public/api/news/stories")
 public class NewsStoryThirdPartyController {
 
-    @Autowired
     private NewStoryService newStoryService;
+    private NewsStoryModelConverter newsStoryModelConverter;
 
     @Autowired
-    private NewsStoryModelConverter newsStoryModelConverter;
+    public NewsStoryThirdPartyController(NewStoryService newStoryService,
+                                         NewsStoryModelConverter newsStoryModelConverter) {
+        this.newStoryService = newStoryService;
+        this.newsStoryModelConverter = newsStoryModelConverter;
+    }
 
     @RequestMapping(value = "/json/{id}", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
     public @ResponseBody ApiNewsStory getJsonNewsStory(@PathVariable("id") long id){

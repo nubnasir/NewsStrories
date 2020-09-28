@@ -17,8 +17,12 @@ import javax.xml.ws.soap.Addressing;
 @Controller
 public class RegistrationController extends BaseController {
 
-    @Autowired
     private UserService userService;
+
+    @Autowired
+    public RegistrationController(UserService userService) {
+        this.userService = userService;
+    }
 
     @RequestMapping(value = "/registration", method = RequestMethod.GET)
     public String registration(Model model){

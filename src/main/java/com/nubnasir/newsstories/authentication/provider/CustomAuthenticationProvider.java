@@ -11,8 +11,12 @@ import org.springframework.security.core.AuthenticationException;
 
 public class CustomAuthenticationProvider implements AuthenticationProvider {
 
-    @Autowired
     private UserService userService;
+
+    @Autowired
+    public CustomAuthenticationProvider(UserService userService) {
+        this.userService = userService;
+    }
 
     @Override
     public Authentication authenticate(Authentication authentication) throws AuthenticationException {

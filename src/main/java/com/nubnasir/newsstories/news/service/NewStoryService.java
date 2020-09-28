@@ -21,14 +21,18 @@ import java.util.List;
 @Service
 public class NewStoryService extends BaseService {
 
-    @Autowired
     private NewsStoryRepository newsStoryRepository;
-
-    @Autowired
     private UserRepository userRepository;
+    private NewsStoryModelConverter newsStoryModelConverter;
 
     @Autowired
-    private NewsStoryModelConverter newsStoryModelConverter;
+    public NewStoryService(NewsStoryRepository newsStoryRepository,
+                           UserRepository userRepository,
+                           NewsStoryModelConverter newsStoryModelConverter) {
+        this.newsStoryRepository = newsStoryRepository;
+        this.userRepository = userRepository;
+        this.newsStoryModelConverter = newsStoryModelConverter;
+    }
 
     public NewsStory getEntityById(long id){
         return newsStoryRepository.getById(id);
