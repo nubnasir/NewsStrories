@@ -1,16 +1,15 @@
 package com.nubnasir.newsstories.user.converter;
 
-import com.nubnasir.newsstories.common.converter.ModelConverterInterface;
+import com.nubnasir.newsstories.common.converter.ModelConverter;
 import com.nubnasir.newsstories.common.helper.DateTimeHelper;
 import com.nubnasir.newsstories.user.model.dto.UserDto;
 import com.nubnasir.newsstories.user.model.entity.UserEntity;
 import org.springframework.stereotype.Component;
 
-import java.util.Date;
 import java.util.List;
 
 @Component
-public class UserModelConverter implements ModelConverterInterface<UserEntity, UserDto> {
+public class UserModelConverter implements ModelConverter<UserEntity, UserDto> {
 
     @Override
     public UserEntity convertDtoToEntity(UserDto o) {

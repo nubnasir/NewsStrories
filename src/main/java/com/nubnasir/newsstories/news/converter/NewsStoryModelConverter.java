@@ -1,11 +1,11 @@
 package com.nubnasir.newsstories.news.converter;
 
-import com.nubnasir.newsstories.common.converter.ModelConverterInterface;
+import com.nubnasir.newsstories.common.converter.ModelConverter;
 import com.nubnasir.newsstories.common.helper.DateTimeHelper;
 import com.nubnasir.newsstories.news.model.dtos.NewsStoryDto;
 import com.nubnasir.newsstories.news.model.entity.NewsStory;
-import com.nubnasir.newsstories.news.model.thirdparty.ApiNewsStory;
 import com.nubnasir.newsstories.user.converter.UserModelConverter;
+import com.nubnasir.newsstories.user.model.dto.UserDto;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -13,10 +13,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Component
-public class NewsStoryModelConverter implements ModelConverterInterface<NewsStory, NewsStoryDto>{
+public class NewsStoryModelConverter implements ModelConverter<NewsStory, NewsStoryDto> {
+
+    private ModelConverter modelConverter;
 
     @Autowired
-    private UserModelConverter userModelConverter;
+    public NewsStoryModelConverter(UserModelConverter modelConverter) {
+        this.modelConverter = modelConverter;
+    }
 
     @Override
     public NewsStory convertDtoToEntity(NewsStoryDto newsStoryDto){
@@ -37,7 +41,7 @@ public class NewsStoryModelConverter implements ModelConverterInterface<NewsStor
         newsStoryDto.setPublishDate(DateTimeHelper.convertDateToString(newsStory.getPublishDate()));
 
         if(newsStory.getUser() !=null ){
-            newsStoryDto.setUserDto(userModelConverter.convertEntityToDto(newsStory.getUser()));
+            newsStoryDto.setUserDto((UserDto) modelConverter.convertEntityToDto(newsStory.getUser()));
         }
 
         return newsStoryDto;
@@ -50,15 +54,5 @@ public class NewsStoryModelConverter implements ModelConverterInterface<NewsStor
             newsStoryDtos.add(convertEntityToDto(newsStoryModel));
         }
         return newsStoryDtos;
-    }
-
-    public ApiNewsStory convertToDtoToApi(NewsStoryDto newsStoryDto){
-        ApiNewsStory apiNewsStory = new ApiNewsStory();
-        apiNewsStory.setId(newsStoryDto.getId());
-        apiNewsStory.setTitle(newsStoryDto.getTitle());
-        apiNewsStory.setContentBody(newsStoryDto.getContentBody());
-        apiNewsStory.setPublishDate(newsStoryDto.getPublishDate());
-        apiNewsStory.setPublisherName(newsStoryDto.getUserDto() !=null? newsStoryDto.getUserDto().getFullName() : "Anonymous" );
-        return apiNewsStory;
     }
 }
